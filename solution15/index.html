@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Interactive rating component</title>
+</head>
+
+<body>
+  <div class="wrapper" id="wrapper-main">
+    <div class="imageWrapper">
+      <img src="images/icon-star.svg" alt="Star" class="imgStar">
+    </div>
+    <div class="mainContent">
+      <h1>How did we do?</h1>
+      <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our
+        offering!</p>
+    </div>
+    <div class="fromContent">
+      <form class="score-form">
+        <input type="hidden" id="scoreInput" value="">
+
+        <div class="buttonContainer">
+          <button class="scoreButton" type="button" onclick="setScore(1)">
+            1
+          </button>
+          <button class="scoreButton" type="button" onclick="setScore(2)">
+            2
+          </button>
+          <button class="scoreButton" type="button" onclick="setScore(3)">
+            3
+          </button>
+          <button class="scoreButton" type="button" onclick="setScore(4)">
+            4
+          </button>
+          <button class="scoreButton" type="button" onclick="setScore(5)">
+            5
+          </button>
+        </div>
+        <div class="btnSubmitContainer">
+          <button class="btnSubmit" id="submit-button" type="button">SUBMIT</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="wrapper" id="wrapper-secondary" style="display: none;">
+    <div class="imageContainer">
+      <img src="images/illustration-thank-you.svg" alt="thank you illustration" class="imgThanks">
+    </div>
+    <div class="recapContainer">
+      <div class="recap">You selected <span id="selected"></span> out of 5</div>
+    </div>
+    <div class="mainContent">
+      <h1 style="text-align: center;">Thank you!</h1>
+      <p style="text-align: center;">We appreciate you taking the time to give a rating. If you ever need more support,
+        don’t hesitate to get in
+        touch!</p>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--clr-veryDarkBlue);
+}
+
+:root {
+    --clr-veryDarkBlue: #131518;
+    --clr-white: #FFFFFF;
+    --clr-orange: #FC7614;
+    --clr-lightGrey: #969FAD;
+    --clr-darkBlue: #262E38;
+}
+
+.wrapper {
+    padding: 36px;
+    max-width: 412px;
+    border-radius: 30px;
+    background: rgb(35, 42, 52);
+    background: -moz-linear-gradient(180deg, rgba(35, 42, 52, 1) 0%, rgba(24, 30, 39, 1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(35, 42, 52, 1) 0%, rgba(24, 30, 39, 1) 100%);
+    background: linear-gradient(180deg, rgba(35, 42, 52, 1) 0%, rgba(24, 30, 39, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#232a34", endColorstr="#181e27", GradientType=1);
+
+}
+
+.imageWrapper {
+    height: 48px;
+    width: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--clr-darkBlue);
+    border-radius: 9999px;
+    margin-bottom: 28px;
+}
+
+.imgStar {
+    width: 16.75px;
+    height: 16px;
+}
+
+h1 {
+    font-family: "Overpass", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 28px;
+    color: var(--clr-white);
+    margin-bottom: 24px;
+}
+
+p {
+    color: var(--clr-lightGrey);
+    font-family: "Overpass", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 24px;
+}
+
+.buttonContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    max-height: 51px;
+}
+
+.scoreButton,
+.btnSubmit {
+    width: 100%;
+}
+
+.scoreButton {
+    background-color: var(--clr-darkBlue);
+    color: var(--clr-lightGrey);
+    border: none;
+    border-radius: 9999px;
+    font-family: "Overpass", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+    height: 51px;
+    width: 51px;
+}
+
+.wrapperSecondary {
+    display: none;
+}
+
+.btnSubmit {
+    background-color: var(--clr-orange);
+    border: none;
+    color: var(--clr-veryDarkBlue);
+    font-family: "Overpass", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 15px;
+    letter-spacing: 2px;
+    padding: 11px 0;
+    border-radius: 22.5px;
+}
+
+.scoreButton:hover {
+    background-color: var(--clr-white);
+    color: var(--clr-darkBlue);
+    cursor: pointer;
+}
+
+.scoreButton:focus {
+    background-color: var(--clr-orange);
+    color: var(--clr-darkBlue);
+}
+
+.btnSubmit:hover {
+    background-color: var(--clr-white);
+    cursor: pointer;
+}
+
+.imgThanks {
+    margin-bottom: 16px;
+}
+
+.imageContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.recap {
+    border-radius: 22.5px;
+    background-color: var(--clr-darkBlue);
+    color: var(--clr-orange);
+    padding: 4px 18px;
+    text-align: center;
+    max-width: 192px;
+    font-family: "Overpass", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.recapContainer {
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 28px;
+}
+
+@media (max-width: 509.98px) {
+    .wrapper{
+        max-width: 320px;
+        padding: 24px 22px;
+    }
+    .scoreButton{
+        width: 42px;
+        height: 42px;
+    }
+}
